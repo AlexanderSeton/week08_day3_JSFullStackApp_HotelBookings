@@ -28,11 +28,24 @@ const BookingsContainer = () => {
         })
     }
     
+    const checkChange = (id) => {
+        // console.log("event.target.checked:", event.target.checked);
+        // console.log("Checkbox has been Checked");
+        console.log("id:", id);
+        const updatedGuestBookings = guestBookings.map((booking) => {
+            if (booking._id === id){
+              booking.status = !booking.status
+            }
+            return booking
+          })
+        setGuestBookings(updatedGuestBookings)
+    }
+
     return (
         <div>
             {/* <p>Bookings container</p> */}
             <BookingsForm addBooking={addBooking} />
-            <BookingsList guestBookings={guestBookings} deleteBooking={deleteBooking} />
+            <BookingsList guestBookings={guestBookings} deleteBooking={deleteBooking} checkChange={checkChange}/>
         </div>
     )
 };
