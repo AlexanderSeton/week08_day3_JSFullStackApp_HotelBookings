@@ -6,6 +6,7 @@ const BookingsForm = () => {
             <form>
                 <input type="text" placeholder="Enter Full Name..."></input>
                 <input type="text" placeholder="Enter Email Address..."></input>
+                <input type="submit"/>
             </form>
         </div>
     )
