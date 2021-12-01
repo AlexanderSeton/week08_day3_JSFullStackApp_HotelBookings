@@ -45,7 +45,14 @@ const BookingsContainer = () => {
     }
 
     const updateBooking = (id, payload) => {
-        putBooking(id, payload);    
+        putBooking(id, payload).then(() => {
+            getBookings()
+            .then((allBookings) => {
+                console.log("Inside the ten statement.")
+                setGuestBookings(allBookings);
+            })
+        })
+
     }
 
     return (

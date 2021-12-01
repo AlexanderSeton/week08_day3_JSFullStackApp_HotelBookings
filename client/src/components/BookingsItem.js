@@ -39,10 +39,9 @@ const BookingsItem = ({ booking, deleteBooking, checkChange, updateBooking }) =>
                     <button onClick={() => deleteBooking(booking._id)} className="button">Delete</button>
                 </div>
                 <div>
-                    { editing ? <BookingUpdateForm booking={booking} className="update-form"/> : null}
+                    { editing ? <BookingUpdateForm booking={booking} handleVisible={handleVisible} updateBooking={updateBooking} className="update-form" editing={editing} setEditing={setEditing} /> : null}
                 </div>
             </li>
-            
         </>
     )
 }
