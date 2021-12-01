@@ -10,9 +10,9 @@ const BookingsList = ({guestBookings, deleteBooking, checkChange, updateBooking}
 
     return(
         <div className ="booking-container">
-            <ul className="unlist">
+            <div className="unlist">
                 {bookingsList}
-            </ul>
+            </div>
         </div>
     )
 }

@@ -4,7 +4,9 @@ import './HotelHeader.css'
 const HotelHeader = () => {
     return(
         <header>
-            <h1 className="heading">Hotel Bookings App</h1>
+            <img src= "" width="10px"/>
+            <h1 className="heading">Hotelier</h1>
+            <h4 className="subheading">The Hotel Bookings App</h4>
         </header>
     )
 }

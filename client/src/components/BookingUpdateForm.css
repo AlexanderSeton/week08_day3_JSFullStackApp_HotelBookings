@@ -7,3 +7,15 @@
 /* .visible >  {
     visibility: hidden;
 } */
+
+.update-form {
+    display: flex;
+    flex-flow: column ;
+    margin: 5%;
+    padding-right: 5%;
+}
+
+.update-form > form > input {
+    width: 200px;
+    height: 50px;
+}

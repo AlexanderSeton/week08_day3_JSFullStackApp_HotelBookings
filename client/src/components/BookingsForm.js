@@ -22,7 +22,8 @@ const BookingsForm = ({ addBooking }) => {
     }
     
     return (
-        <div>
+        <div className="booking-form-container">
+            {/* <h3>Add a new booking</h3> */}
             <form onSubmit={handleSubmit} className="form">
                 <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange} required className="input"></input>
                 <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange} required className="input"></input>

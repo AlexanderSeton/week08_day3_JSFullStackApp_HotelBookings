@@ -5,17 +5,24 @@
     /* padding-left: 2%; */
 }
 
+.main-data {
+    border-bottom: 1px solid black;
+    /* width: 50vh; */
+
+}
+
 .booking-item {
     border: 1px solid black;
     list-style: none;
-    /* background-color: blue; */
+    background-color: #8FBC8F;
     border-radius: 25px;
-    font-size: 130%;
+    font-size: 150%;
     margin: 5% auto;
     padding: 2%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-top: 5%;
 }
 
 .booking-item > div {
@@ -26,8 +33,17 @@
     height: 50px;
     width: 100px;
     border-radius: 20%;
-    margin: auto 2%;
+    margin: 2% 2%;
     font-size: 110%;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px black;
+}
+
+#slider-switch-section {
+    padding-bottom: 10%;
 }
 
 

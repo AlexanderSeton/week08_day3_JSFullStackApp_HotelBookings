@@ -23,11 +23,13 @@ const BookingsItem = ({ booking, deleteBooking, checkChange, updateBooking }) =>
         
     return(
         <>
-            <li className="booking-item">
+            <div className="booking-item">
                 <div>
-                    <p>{booking.name}</p>
-                    <p>{booking.email}</p>
-                    <div className="status-data">
+                    <div className="main-data">
+                        <p><strong>{booking.name}</strong></p>
+                        <p><strong>{booking.email}</strong></p>
+                    </div>
+                    <div className="main-data" id="slider-switch-section"> 
                         <p>{checkedIn()}</p>
                         <label className="switch">
                             <input type="checkbox" onChange={checkChange} className="checkbox" id={booking._id} checked={booking.status} />
@@ -41,7 +43,7 @@ const BookingsItem = ({ booking, deleteBooking, checkChange, updateBooking }) =>
                 <div>
                     { editing ? <BookingUpdateForm booking={booking} handleVisible={handleVisible} updateBooking={updateBooking} className="update-form" editing={editing} setEditing={setEditing} /> : null}
                 </div>
-            </li>
+            </div>
         </>
     )
 }

@@ -1,9 +1,21 @@
+.booking-form-container {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    /* box-shadow: ; */
+}
+
 .form{
     list-style: none;
-    background-color: purple;
+    /* background-color: purple; */
     border-radius: 25px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: auto;
 }
 
 .input {
