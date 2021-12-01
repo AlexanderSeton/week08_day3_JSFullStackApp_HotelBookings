@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { postBooking } from "../services/bookingsService";
+import "./BookingsForm.css";
+
 
 const BookingsForm = ({ addBooking }) => {
 
@@ -21,10 +23,10 @@ const BookingsForm = ({ addBooking }) => {
     
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange} required></input>
-                <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange} required></input>
-                <input type="submit"/>
+            <form onSubmit={handleSubmit} className="form">
+                <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange} required className="input"></input>
+                <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange} required className="input"></input>
+                <input type="submit" className="submit"/>
             </form>
         </div>
     )
