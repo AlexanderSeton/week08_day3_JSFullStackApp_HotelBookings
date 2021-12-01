@@ -4,7 +4,7 @@ import BookingsContainer from './containers/BookingsContainer'
 
 function App() {
   return (
-    <div>
+    <div className="main-content">
       <HotelHeader />
       <BookingsContainer />
     </div>

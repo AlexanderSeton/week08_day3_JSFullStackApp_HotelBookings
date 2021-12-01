@@ -13,11 +13,18 @@ const BookingsContainer = () => {
             setGuestBookings(allBookings);
         })
     }, []);
+
+    const addBooking = (booking) => {
+        // let tempBookings = guestBookings.map((booking) => booking);
+        // tempBookings.push(booking);
+        let tempBookings = [...guestBookings, booking]
+        setGuestBookings(tempBookings);
+    }
     
     return (
         <div>
             {/* <p>Bookings container</p> */}
-            <BookingsForm />
+            <BookingsForm addBooking={addBooking} />
             <BookingsList guestBookings={guestBookings} />
         </div>
     )
