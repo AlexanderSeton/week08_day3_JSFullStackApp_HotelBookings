@@ -19,3 +19,11 @@ export const destroyBooking = (id) => {
         method: "DELETE"
     })
 }
+
+export const putBooking = (id, payload) => {
+    return fetch(baseURL + id, {
+        method: 'PUT',
+        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json' }
+    }) 
+}

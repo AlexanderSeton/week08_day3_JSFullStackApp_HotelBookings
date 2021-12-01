@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import BookingsForm from '../components/BookingsForm.js'
 import BookingsList from '../components/BookingsList'
-import { getBookings, destroyBooking } from '../services/bookingsService'
+import { getBookings, destroyBooking, putBooking } from '../services/bookingsService'
 
 const BookingsContainer = () => {
 
@@ -28,22 +28,27 @@ const BookingsContainer = () => {
         })
     }
     
-    const checkChange = (id) => {
-        // console.log("event.target.checked:", event.target.checked);
-        // console.log("Checkbox has been Checked");
-        console.log("id:", id);
+    const checkChange = (event) => {
+        // console.log(event.target);
+        const id = event.target.id;
+        let checked = event.target.checked;
         const updatedGuestBookings = guestBookings.map((booking) => {
-            if (booking._id === id){
-              booking.status = !booking.status
+            if (booking._id === id) {
+              booking.status = !booking.status;
             }
-            return booking
+            return booking;
           })
-        setGuestBookings(updatedGuestBookings)
+        setGuestBookings(updatedGuestBookings);
+        let payload = {"status": checked};
+        updateBooking(id, payload);
+    }
+
+    const updateBooking = (id, payload) => {
+        putBooking(id, payload);    
     }
 
     return (
         <div>
-            {/* <p>Bookings container</p> */}
             <BookingsForm addBooking={addBooking} />
             <BookingsList guestBookings={guestBookings} deleteBooking={deleteBooking} checkChange={checkChange}/>
         </div>
