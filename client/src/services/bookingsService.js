@@ -13,3 +13,9 @@ export const postBooking = (payload) => {
     })
     .then(res => res.json())
 }
+
+export const destroyBooking = (id) => {
+    return fetch(baseURL + id, {
+        method: "DELETE"
+    })
+}

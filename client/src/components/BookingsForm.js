@@ -11,6 +11,7 @@ const BookingsForm = ({ addBooking }) => {
         postBooking(formData).then((data) => {
             addBooking(data);
         });
+        event.target.reset();
     }
     
     const onChange = (event) => {
@@ -21,8 +22,8 @@ const BookingsForm = ({ addBooking }) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange}></input>
-                <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange}></input>
+                <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange} required></input>
+                <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange} required></input>
                 <input type="submit"/>
             </form>
         </div>
