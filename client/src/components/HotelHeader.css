@@ -1,13 +1,21 @@
 header {
     background-color: #A62121;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 15.5vh;
+    width: 100vw;
+    z-index: 1;
 }
 
 .heading {
     margin: 0;
-    padding: 20px 0 10px 0;
+    padding: 10px 0;
     text-align: center;
     color: #D9D9D9;
-    font-family: 'Varela Round'
+    font-family: 'Varela Round';
+    font-size: 350%;
 }
 
 .subheading {
@@ -16,4 +24,15 @@ header {
     text-align: center;
     color: #D9D9D9;
     font-family: 'Varela Round'
+}
+
+.logo-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#svg {
+    filter: brightness(0) invert(1);
 }

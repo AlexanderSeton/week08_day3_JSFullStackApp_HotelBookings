@@ -10,9 +10,9 @@ const BookingsItem = ({ booking, deleteBooking, checkChange, updateBooking }) =>
     const checkedIn = function(){
         let status;
         if (booking.status === true){
-            status = "Checked-In"
+            status = "Checked In"
         } else {
-            status = null
+            status = "Not Checked In"
         }
         return status
     }
@@ -35,10 +35,12 @@ const BookingsItem = ({ booking, deleteBooking, checkChange, updateBooking }) =>
                             <input type="checkbox" onChange={checkChange} className="checkbox" id={booking._id} checked={booking.status} />
                             <span className="slider round"></span>
                         </label>
-                    </div>    
-                    <br/>
-                    <button className="button" onClick={handleVisible}>Edit</button>
-                    <button onClick={() => deleteBooking(booking._id)} className="button">Delete</button>
+                    </div>  
+                    <div className="buttons-section">
+                        <br/>
+                        <button className="button" onClick={handleVisible}>Edit</button>
+                        <button onClick={() => deleteBooking(booking._id)} className="button">Delete</button>
+                    </div>  
                 </div>
                 <div>
                     { editing ? <BookingUpdateForm booking={booking} handleVisible={handleVisible} updateBooking={updateBooking} className="update-form" editing={editing} setEditing={setEditing} /> : null}

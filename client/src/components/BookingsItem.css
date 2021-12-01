@@ -1,28 +1,29 @@
-.status-data {
-}
-
-.status-data > p {
-    /* padding-left: 2%; */
-}
-
 .main-data {
     border-bottom: 1px solid black;
     /* width: 50vh; */
+}
 
+.buttons-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 .booking-item {
     border: 1px solid black;
     list-style: none;
-    background-color: #8FBC8F;
+    background-color: silver;
     border-radius: 25px;
     font-size: 150%;
-    margin: 5% auto;
-    padding: 2%;
+    margin: 1% 1%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-top: 5%;
+    text-align: center;
+    padding: 0% 5% 1% 5%;
+    margin: 2% auto;
+    width: auto;
+    align-items: center;
 }
 
 .booking-item > div {
@@ -35,6 +36,7 @@
     border-radius: 20%;
     margin: 2% 2%;
     font-size: 110%;
+    margin-top: 5%;
 }
 
 .button:hover {

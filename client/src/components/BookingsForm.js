@@ -27,7 +27,7 @@ const BookingsForm = ({ addBooking }) => {
             <form onSubmit={handleSubmit} className="form">
                 <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange} required className="input"></input>
                 <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange} required className="input"></input>
-                <input type="submit" className="submit"/>
+                <input type="submit" className="submit" value="Add Booking"/>
             </form>
         </div>
     )

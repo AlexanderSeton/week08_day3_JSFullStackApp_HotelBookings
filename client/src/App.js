@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="main-content">
       <HotelHeader />
-      <BookingsContainer />
+      <div className="main-content-body">
+        <BookingsContainer />
+      </div>
     </div>
   );
 }

@@ -1,10 +1,13 @@
 .booking-form-container {
-    width: 75%;
+    width: 75vw;
     margin: auto;
-    padding: 10px;
+    margin-top: 3%;
+    padding: 1% 0;
     border: 1px black solid;
     border-radius: 10px;
     /* box-shadow: ; */
+    background-color: #bf4342;
+    /* margin-top: 20vh; */
 }
 
 .form{
@@ -16,6 +19,7 @@
     justify-content: center;
     gap: 20px;
     width: auto;
+    align-items: center;
 }
 
 .input {
@@ -25,12 +29,17 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    color: white;
+    color: black;
     /* color: rgb(129, 131, 132); */
     border-radius: 2px;
     border: 1px solid rgb(52, 53, 54);
-    background-color: rgb(39, 39, 41);
+    background-color: #D9D9D9;
     margin: 3px;
+    width: 30%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 125%;
+    padding: 0 1%;
 }
 
 .input:hover {
@@ -40,11 +49,11 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    color: white;
-    border-radius: 2px;
+    color: black;
+    border-radius: 20px;
     transition: 0.4s;
     border: 1px solid rgb(129, 131, 132);
-    background-color: rgb(39, 39, 41);
+    background-color: #D9D9D9;
     margin: 3px;
 }
 
@@ -55,13 +64,15 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    color: white;
+    color: black;
     border-radius: 20px;
     border: 1px solid rgb(52, 53, 54);
-    background-color: rgb(129, 131, 132);
-    width: 100px;
-    height: 35px;
+    background-color: #D9D9D9;
+    width: 130px;
+    height: 50px;
     margin-left: 15px;
+    font-size: 125%;
+    font-size: 125%;
 }
 
 .submit:hover {
@@ -71,12 +82,14 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    color: white;
+    color: black;
     border-radius: 20px;
     transition: 0.4s;
     border: 1px solid rgb(129, 131, 132);
-    background-color: rgb(39, 39, 41);
-    width: 100px;
-    height: 35px;
+    background-color: #D9D9D9;
+    width: 130px;
+    height: 50px;
     margin-left: 15px;
+    transform: scale(1.1);
+    box-shadow: 0px 5px black;
 }

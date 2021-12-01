@@ -26,7 +26,7 @@ const BookingUpdateForm = ( {booking, updateBooking, editing, setEditing} ) => {
             <form onSubmit={onHandleSubmit} className="update-form">
                 <input type="text" placeholder="Enter Full Name..." id="name" onChange={onChange} required defaultValue={booking.name}></input>
                 <input type="text" placeholder="Enter Email Address..." id="email" onChange={onChange} required defaultValue={booking.email}></input>
-                <input type="submit" className="submit"/>
+                <input type="submit" id="form-submit-update"/>
             </form>
             {/* <h2>Edit Booking</h2>
             <div className="formWrap">
